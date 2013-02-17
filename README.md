@@ -1,1 +1,1 @@
-Simplest possible hello world heroku node.js app
+Simplest possible hello-world heroku node.js app
