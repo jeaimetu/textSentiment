@@ -1,1 +1,1 @@
-A simple app that allows signup/signin/signout
+Simplest possible hello world heroku node.js app
