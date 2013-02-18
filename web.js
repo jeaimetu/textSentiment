@@ -1,3 +1,5 @@
+// this is taken mostly from
+// http://thecodinghumanist.com/blog/archives/2011/5/6/serving-static-files-from-node-js
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
