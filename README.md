@@ -23,3 +23,5 @@ Run on heroku as
 > git push heroku master
 > heroku open
 ```
+
+Next iteration of this app is https://github.com/ogt/helloworld-js-heroku-depends
