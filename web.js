@@ -59,9 +59,10 @@ var textapi = new AYLIENTextAPI({
 textapi.sentiment({
   //'text': 'John is a very good football player!'
  'text': "As we understand it now, the data mining and analytics company, based out of London, gained access to data on as many as 50 million Facebook profiles thanks to generous data-sharing policies Facebook app developers enjoyed back in 2014. This data, which was sold to Cambridge Analytica against Facebook’s terms of service, reportedly informed the firm’s election ad targeting toolset used by the campaign of President Donald Trump and others. The fallout has been severe, with numerous lawsuits, governmental inquiries, a #DeleteFacebook user boycott campaign, and a sharp drop in share price that’s erased nearly $50 billion of the company’s market cap."
-}, function(error, response) {
+}, function(error, response, rateLimits) {
   if (error === null) {
     console.log(response);
+   console.log(rateLimits);
   }
 });
 
