@@ -49,3 +49,18 @@ http.createServer(function (request, response) {
 }).listen(port);
  
 console.log('Server running at http://127.0.0.1:'+port+'/');
+
+var AYLIENTextAPI = require('aylien_textapi');
+var textapi = new AYLIENTextAPI({
+  application_id: process.env.appid,
+  application_key: process.env.appkey
+});
+
+textapi.sentiment({
+  'text': 'John is a very good football player!'
+}, function(error, response) {
+  if (error === null) {
+    console.log(response);
+  }
+});
+
