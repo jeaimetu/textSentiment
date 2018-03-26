@@ -57,7 +57,8 @@ var textapi = new AYLIENTextAPI({
 });
 
 textapi.sentiment({
-  'text': 'John is a very good football player!'
+  //'text': 'John is a very good football player!'
+ 'text': '여기 음식은 매우 맛있다.';
 }, function(error, response) {
   if (error === null) {
     console.log(response);
